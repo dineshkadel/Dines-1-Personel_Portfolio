@@ -1,8 +1,36 @@
+import { motion } from 'framer-motion';
 import Reveal from '../ui/Reveal';
 import Button from '../ui/Button';
 import { portfolioData } from '../../data/portfolioData';
 
 const Hero = () => {
+  const name = "Dinesh Kadel";
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.07,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const letterVariants = {
+    hidden: { opacity: 0, y: 22, filter: "blur(4px)" },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: "blur(0px)",
+      transition: {
+        type: "spring",
+        damping: 14,
+        stiffness: 120
+      }
+    }
+  };
+
   return (
     <section id="hero" className="min-h-screen flex items-center px-6 md:px-12 pt-28 pb-16">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
@@ -15,9 +43,30 @@ const Hero = () => {
           </Reveal>
 
           <Reveal>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight mb-4 text-text">
-              Dinesh Kadel
-            </h1>
+            <motion.h1
+              className="text-3xl min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight mb-4 text-text whitespace-nowrap inline-flex items-baseline"
+              variants={containerVariants}
+              initial="hidden"
+              animate="visible"
+            >
+              {name.split("").map((char, index) => (
+                <motion.span
+                  key={index}
+                  variants={letterVariants}
+                  className="inline-block"
+                >
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}
+              <motion.span
+                animate={{ opacity: [0, 1, 0] }}
+                transition={{ repeat: Infinity, duration: 0.85, ease: "easeInOut" }}
+                className="inline-block text-sky ml-1.5 font-light"
+                aria-hidden="true"
+              >
+                |
+              </motion.span>
+            </motion.h1>
           </Reveal>
 
           <Reveal>
@@ -36,8 +85,8 @@ const Hero = () => {
 
           <Reveal>
             <div className="flex gap-4 flex-wrap">
-              <Button variant="primary" icon="fa-rocket" href="#projects">View My Work</Button>
-              <Button variant="outline" icon="fa-envelope" href="#contact">Get in Touch</Button>
+              <Button variant="primary" icon="fa-rocket" to="/projects">View My Work</Button>
+              <Button variant="outline" icon="fa-envelope" to="/contact">Get in Touch</Button>
             </div>
           </Reveal>
         </div>

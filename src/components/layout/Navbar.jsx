@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -48,11 +49,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { href: "#about", label: "About", icon: "fa-user" },
-    { href: "#education", label: "Education", icon: "fa-graduation-cap" },
-    { href: "#skills", label: "Skills", icon: "fa-layer-group" },
-    { href: "#projects", label: "Projects", icon: "fa-folder-open" },
-    { href: "#contact", label: "Contact", icon: "fa-paper-plane" }
+    { to: "/", label: "Home", icon: "fa-house" },
+    { to: "/about", label: "About", icon: "fa-user" },
+    { to: "/skills", label: "Skills", icon: "fa-layer-group" },
+    { to: "/projects", label: "Projects", icon: "fa-folder-open" },
+    { to: "/contact", label: "Contact", icon: "fa-paper-plane" }
   ];
 
   return (
@@ -61,27 +62,35 @@ const Navbar = () => {
     }`}>
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center justify-between">
-          <a 
-            href="#hero" 
+          <Link 
+            to="/" 
             onClick={() => setIsOpen(false)}
             className="font-mono text-sm text-sky flex items-center gap-2"
           >
             <img 
-              src="./public/gibly.png" 
+              src="/gibly.png" 
               alt="Dinesh Kadel" 
               className="w-8 h-8 rounded-full object-cover border border-sky/20"
+              onError={(e) => { e.currentTarget.src = './public/gibly.png'; }}
             />
             <span className="text-text font-semibold">Dinesh Kadel</span>
-          </a>
+          </Link>
 
           <div className="flex items-center gap-3 md:gap-6">
             <ul className="hidden md:flex gap-8">
               {navItems.map(item => (
-                <li key={item.href}>
-                  <a href={item.href} className="text-muted text-sm flex items-center gap-2 hover:text-sky transition-colors">
+                <li key={item.to}>
+                  <NavLink 
+                    to={item.to} 
+                    className={({ isActive }) =>
+                      `text-sm flex items-center gap-2 transition-colors ${
+                        isActive ? 'text-sky font-semibold' : 'text-muted hover:text-sky'
+                      }`
+                    }
+                  >
                     <i className={`fas ${item.icon} text-xs`}></i>
                     {item.label}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -114,17 +123,23 @@ const Navbar = () => {
         >
           <ul className="flex flex-col gap-1 py-2">
             {navItems.map(item => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-muted hover:text-sky hover:bg-sky/5 active:bg-sky/10 transition-colors text-sm font-medium"
+                  className={({ isActive }) =>
+                    `flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors text-sm font-medium ${
+                      isActive 
+                        ? 'text-sky bg-sky/10 font-semibold' 
+                        : 'text-muted hover:text-sky hover:bg-sky/5 active:bg-sky/10'
+                    }`
+                  }
                 >
                   <span className="w-6 flex items-center justify-center text-sky">
                     <i className={`fas ${item.icon} text-xs`}></i>
                   </span>
                   {item.label}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

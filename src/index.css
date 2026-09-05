@@ -37,7 +37,7 @@
   }
   
   html {
-    scroll-behavior: smooth;
+    /* Normal native scrolling to prevent runaway smooth-scroll bug */
   }
   
   body {

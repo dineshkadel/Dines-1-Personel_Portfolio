@@ -63,6 +63,9 @@ export const portfolioData = {
       description: "Full-featured online store with course listings, Category management, JWT auth, and payment integration with ESewa. Built with the MERN stack.",
       gradient: "from-cyan-900/30 to-blue-900/30",
       iconColor: "text-sky",
+      icon: "fa-graduation-cap",
+      image: "",
+      video: "",
       stack: ["React", "Node.js", "MongoDB", "Express"],
       github: "https://github.com/dines-1/Learning_Management_System_",
       demo: "#"
@@ -72,6 +75,9 @@ export const portfolioData = {
       description: "Real-time messaging app using Socket.io with rooms, private messages, and live online status indicators.",
       gradient: "from-green-900/30 to-emerald-900/30",
       iconColor: "text-green",
+      icon: "fa-comments",
+      image: "",
+      video: "",
       stack: ["React", "Express", "Socket.io"],
       github: "#",
       demo: "#"
@@ -81,34 +87,42 @@ export const portfolioData = {
       description: "RESTful API built with NestJS and TypeScript. Features JWT auth, CRUD operations, and role-based access control.",
       gradient: "from-purple-900/30 to-indigo-900/30",
       iconColor: "text-sky-light",
+      icon: "fa-list-check",
+      image: "",
+      video: "",
       stack: ["NestJS", "TypeScript", "MongoDB"],
       github: "#",
       demo: null
     },
     {
       name: "HomeCare Service",
-      description: "A web-based application for booking household services . Features Authentication, browse services, book appointments,admin control and make payments through integrated payment gateways. ",
-      gradient: "from-green-900/30 to-emerald-900/30",
+      description: "A web-based application for booking household services. Features Authentication, browse services, book appointments, admin control and make payments through integrated payment gateways.",
+      gradient: "from-emerald-900/30 to-teal-900/30",
       iconColor: "text-green",
+      icon: "fa-house-user",
+      image: "",
+      video: "",
       stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
       github: "https://github.com/dines-1/Local_household_service_booking",
       demo: "#"
     },
-    ,
     {
       name: "E-commerce Website: Saasto Bazaar",
-      description: "A web-based application for online shopping . Features Authentication, browse products, add to cart,admin control and make payments through integrated payment gateways. ",
-      gradient: "from-green-900/30 to-emerald-900/30",
-      iconColor: "text-green",
+      description: "A web-based application for online shopping. Features Authentication, browse products, add to cart, admin control and make payments through integrated payment gateways.",
+      gradient: "from-sky-900/30 to-blue-900/30",
+      iconColor: "text-sky",
+      icon: "fa-cart-shopping",
+      image: "",
+      video: "",
       stack: ["HTML", "Tailwind CSS", "JavaScript", "PHP", "MySQL"],
       github: "https://github.com/dines-1/E_commerce-_website-About_-local-_mart",
       demo: "#"
-    },
+    }
   ],
 
   about: {
     description: [
-      "Hi, I'm a fullstack developer and BCA student at National College of Computer Studies, Tribhuvan University. I'm passionate about building scalable web applications and enjoy working across the entire stack — from designing databases to building responsive frontends.",
+      "Hi, I'm a fullstack developer and BCA student at National College of Computer Studies, Tribhuvan University. I'm passionate about building scalable web applications and enjoy working across the entire stack from designing databases to building responsive frontends.",
       "I'm always exploring new technologies and love turning ideas into real products. Outside of code, I enjoy open source contributions and connecting with the developer community."
     ]
   },
