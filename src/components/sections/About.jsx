@@ -5,17 +5,17 @@ import { portfolioData } from '../../data/portfolioData';
 const About = () => {
   const infoItems = [
     { icon: "fa-university", key: "University", value: "Tribhuvan University" },
-    { icon: "fa-book-open", key: "Degree", value: "Bachelor in Computer Application (BCA) · Year 3" },
+    { icon: "fa-book-open", key: "Degree", value: "Bachelor in Computer Application " },
     { icon: "fa-location-dot", key: "Location", value: portfolioData.location },
     { icon: "fa-heart", key: "Interests", value: portfolioData.interests.join(", ") },
     { icon: "fa-envelope", key: "Email", value: portfolioData.email }
   ];
-  
+
   return (
     <section id="about" className="bg-bg2">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <SectionHeader number="01" title="About" />
-        
+        <SectionHeader title="About" />
+
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="space-y-4">
             {portfolioData.about.description.map((text, idx) => (
@@ -28,7 +28,7 @@ const About = () => {
               </Reveal>
             ))}
           </div>
-          
+
           <ul className="space-y-4">
             {infoItems.map((item, idx) => (
               <Reveal key={idx}>

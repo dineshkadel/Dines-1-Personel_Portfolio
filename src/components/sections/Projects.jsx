@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <SectionHeader number="04" title="Projects" />
+        <SectionHeader title="Projects" />
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {portfolioData.projects.map((project, idx) => (

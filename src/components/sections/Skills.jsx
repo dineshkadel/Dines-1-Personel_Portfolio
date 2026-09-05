@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <section id="skills" className="bg-bg2">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <SectionHeader number="03" title="Skills" />
+        <SectionHeader title="Skills" />
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {portfolioData.skills.map((skillGroup, idx) => (

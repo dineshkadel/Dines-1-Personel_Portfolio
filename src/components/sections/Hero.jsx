@@ -15,8 +15,8 @@ const Hero = () => {
           </Reveal>
 
           <Reveal>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight mb-4">
-              <span className="gradient-text">Dinesh Kadel</span>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight mb-4 text-text">
+              Dinesh Kadel
             </h1>
           </Reveal>
 
@@ -30,7 +30,7 @@ const Hero = () => {
           <Reveal>
             <p className="text-muted max-w-lg mb-8 leading-relaxed">
               I build end-to-end web applications — from clean REST APIs to polished UIs.
-              Crafting projects with the MERN stack, NestJS, and TypeScript.
+              Crafting projects with the MERN stack, NextJS, and TypeScript.
             </p>
           </Reveal>
 
@@ -46,15 +46,15 @@ const Hero = () => {
           <div className="relative group mx-auto md:ml-auto max-w-sm">
             {/* Background Accent */}
             <div className="absolute -inset-4 bg-gradient-to-tr from-sky/20 to-green/20 rounded-2xl blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-60"></div>
-            
+
             {/* Image Container */}
             <div className="relative aspect-square rounded-2xl overflow-hidden border border-sky/10  transition-transform duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02]">
-              <img 
-                src="./public/image.jpg" 
-                alt="Dinesh Kadel" 
+              <img
+                src="./public/image.jpg"
+                alt="Dinesh Kadel"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
-              
+
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent opacity-60"></div>
             </div>

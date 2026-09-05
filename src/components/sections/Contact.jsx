@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-card border-t border-sky/10">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <SectionHeader number="05" title="Contact" icon="fa-paper-plane" />
+        <SectionHeader title="Contact" icon="fa-paper-plane" />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <a

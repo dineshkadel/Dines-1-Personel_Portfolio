@@ -65,7 +65,7 @@ export const portfolioData = {
       demo: "#"
     },
     {
-      name: "Chat Application",
+      name: "Echo - Chat Application",
       description: "Real-time messaging app using Socket.io with rooms, private messages, and live online status indicators.",
       gradient: "from-green-900/30 to-emerald-900/30",
       iconColor: "text-green",
@@ -105,10 +105,10 @@ export const portfolioData = {
 
   about: {
     description: [
-      "Hi, I'm a fullstack developer and 3rd-year BCA student at National College of Computer Studies, Tribhuvan University. I'm passionate about building scalable web applications and enjoy working across the entire stack — from designing databases to building responsive frontends.",
+      "Hi, I'm a fullstack developer and BCA student at National College of Computer Studies, Tribhuvan University. I'm passionate about building scalable web applications and enjoy working across the entire stack — from designing databases to building responsive frontends.",
       "I'm always exploring new technologies and love turning ideas into real products. Outside of code, I enjoy open source contributions and connecting with the developer community."
     ]
   },
 
-  interests: ["Web Dev", "APIs", "Open Source", "UI/UX"]
+  interests: ["Web Dev", "APIs", "Open Source", "UI/UX", "CI/CD", "AI/ML"]
 };

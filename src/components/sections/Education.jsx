@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section id="education">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <SectionHeader number="02" title="Education" />
+        <SectionHeader title="Education" />
         
         <div className="space-y-4">
           {portfolioData.education.map((edu, idx) => (
