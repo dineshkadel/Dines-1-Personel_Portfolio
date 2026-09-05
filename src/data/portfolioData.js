@@ -28,30 +28,33 @@ export const portfolioData = {
   ],
 
   skills: [
-    {
-      category: "Frontend",
-      icon: "fa-desktop",
-      skills: ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"],
-      variant: "default"
-    },
-    {
-      category: "Backend",
-      icon: "fa-server",
-      skills: ["Node.js", "Express.js", "NestJS", "REST APIs", "TypeScript", "Socket.io", "JWT", "Java", "PHP"],
-      variant: "sky"
-    },
-    {
-      category: "Database",
-      icon: "fa-database",
-      skills: ["MongoDB", "Mongoose", "SQL", "PostgreSQL"],
-      variant: "default"
-    },
-    {
-      category: "Tools",
-      icon: "fa-wrench",
-      skills: ["Git", "GitHub", "VS Code", "Postman", "Docker", "Linux", "Kubernetes"],
-      variant: "sky"
-    }
+    { name: "React", icon: "devicon-react-original colored" },
+    { name: "Next.js", icon: "devicon-nextjs-plain text-text" },
+    { name: "JavaScript", icon: "devicon-javascript-plain colored" },
+    { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+    { name: "Python", icon: "devicon-python-plain colored" },
+    { name: "Go", icon: "devicon-go-original-wordmark colored" },
+    { name: "Node.js", icon: "devicon-nodejs-plain colored" },
+    { name: "Express.js", icon: "devicon-express-original text-text" },
+    { name: "NestJS", icon: "devicon-nestjs-original colored" },
+    { name: "Tailwind CSS", icon: "devicon-tailwindcss-plain colored" },
+    { name: "HTML5", icon: "devicon-html5-plain colored" },
+    { name: "CSS3", icon: "devicon-css3-plain colored" },
+    { name: "MongoDB", icon: "devicon-mongodb-plain colored" },
+    { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
+    { name: "MySQL", icon: "devicon-mysql-plain colored" },
+    { name: "Mongoose", icon: "fas fa-database text-green" },
+    { name: "Docker", icon: "devicon-docker-plain colored" },
+    { name: "Kubernetes", icon: "devicon-kubernetes-plain colored" },
+    { name: "Git", icon: "devicon-git-plain colored" },
+    { name: "GitHub", icon: "devicon-github-original text-text" },
+    { name: "Linux", icon: "devicon-linux-plain text-text" },
+    { name: "REST APIs", icon: "fas fa-network-wired text-sky" },
+    { name: "Socket.io", icon: "devicon-socketio-original text-text" },
+    { name: "Postman", icon: "devicon-postman-plain colored" },
+    { name: "VS Code", icon: "devicon-vscode-plain colored" },
+    { name: "Java", icon: "devicon-java-plain colored" },
+    { name: "PHP", icon: "devicon-php-plain colored" }
   ],
 
   projects: [
