@@ -42,3 +42,6 @@ vite.config.js
 tailwind.config.js
 postcss.config.js
 .vscode/
+
+.env
+.env.example

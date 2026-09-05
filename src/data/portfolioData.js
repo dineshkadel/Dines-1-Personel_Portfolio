@@ -78,8 +78,8 @@ export const portfolioData = {
       icon: "fa-comments",
       image: "",
       video: "",
-      stack: ["React", "Express", "Socket.io"],
-      github: "#",
+      stack: ["NextJS", "MongoDB", "Socket.io", "TypeScript"],
+      github: "https://github.com/dines-1/Echo--A-Chatapp-",
       demo: "#"
     },
     {
@@ -90,7 +90,7 @@ export const portfolioData = {
       icon: "fa-list-check",
       image: "",
       video: "",
-      stack: ["NestJS", "TypeScript", "MongoDB"],
+      stack: ["NestJS", "TypeScript", "MongoDB", "TailwindCSS"],
       github: "#",
       demo: null
     },
