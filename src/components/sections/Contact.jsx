@@ -148,7 +148,7 @@ const Contact = () => {
                       id="user_name"
                       name="user_name"
                       required
-                      placeholder="Alex Morgan"
+                      placeholder=""
                       className="w-full px-4 py-3 rounded-xl bg-bg2/90 border border-sky/15 text-text placeholder:text-muted/50 focus:border-sky focus:ring-1 focus:ring-sky outline-none transition-all text-sm font-sans"
                     />
                   </div>
@@ -163,7 +163,7 @@ const Contact = () => {
                       id="user_email"
                       name="user_email"
                       required
-                      placeholder="alex@example.com"
+                      placeholder=""
                       className="w-full px-4 py-3 rounded-xl bg-bg2/90 border border-sky/15 text-text placeholder:text-muted/50 focus:border-sky focus:ring-1 focus:ring-sky outline-none transition-all text-sm font-sans"
                     />
                   </div>
@@ -179,7 +179,7 @@ const Contact = () => {
                     id="subject"
                     name="subject"
                     required
-                    placeholder="Project Inquiry / Job Opportunity"
+                    placeholder=""
                     className="w-full px-4 py-3 rounded-xl bg-bg2/90 border border-sky/15 text-text placeholder:text-muted/50 focus:border-sky focus:ring-1 focus:ring-sky outline-none transition-all text-sm font-sans"
                   />
                 </div>
@@ -202,11 +202,10 @@ const Contact = () => {
                 {/* Status Message Display */}
                 {status.message && (
                   <div
-                    className={`p-3.5 rounded-xl text-xs font-mono flex items-center gap-2.5 ${
-                      status.type === 'success'
-                        ? 'bg-green/10 border border-green/30 text-green'
-                        : 'bg-rose-500/10 border border-rose-500/30 text-rose-400'
-                    }`}
+                    className={`p-3.5 rounded-xl text-xs font-mono flex items-center gap-2.5 ${status.type === 'success'
+                      ? 'bg-green/10 border border-green/30 text-green'
+                      : 'bg-rose-500/10 border border-rose-500/30 text-rose-400'
+                      }`}
                   >
                     <i className={`fas ${status.type === 'success' ? 'fa-circle-check' : 'fa-circle-exclamation'}`}></i>
                     <span>{status.message}</span>
@@ -217,7 +216,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full sm:w-auto self-start inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-gradient-to-r from-sky-dark to-green-dark text-white font-semibold text-sm hover:opacity-95 hover:-translate-y-0.5 transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed shadow-md shadow-sky/10"
+                  className="w-full sm:w-auto self-start inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-sky text-bg font-semibold text-sm hover:bg-sky-light hover:-translate-y-0.5 transition-all cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed shadow-md shadow-sky/10"
                 >
                   {loading ? (
                     <>

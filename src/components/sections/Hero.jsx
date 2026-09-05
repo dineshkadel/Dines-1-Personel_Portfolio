@@ -78,7 +78,7 @@ const Hero = () => {
 
           <Reveal>
             <p className="text-muted max-w-lg mb-8 leading-relaxed">
-              I build end-to-end web applications — from clean REST APIs to polished UIs.
+              I build end-to-end web applications from clean REST APIs to polished UIs.
               Crafting projects with the MERN stack, NextJS, and TypeScript.
             </p>
           </Reveal>
