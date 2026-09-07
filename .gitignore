@@ -38,4 +38,3 @@ yarn.lock
 .vscode/
 
 .env
-.env.example
