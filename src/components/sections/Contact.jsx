@@ -11,7 +11,7 @@ const Contact = () => {
   const contact = {
     email: 'dineshkadel11@gmail.com',
     linkedin: 'https://www.linkedin.com/in/dinesh-kadel-7aa589292',
-    github: 'https://github.com/dines-1/',
+    github: 'https://github.com/dineshkadel/',
     phone: '+977-9745930752',
   };
 
@@ -122,7 +122,7 @@ const Contact = () => {
                   </div>
                   <div className="min-w-0">
                     <span className="font-mono text-[10px] text-muted uppercase tracking-wider block">GitHub</span>
-                    <span className="text-sm font-medium text-text truncate block group-hover:text-sky transition-colors">dines-1</span>
+                    <span className="text-sm font-medium text-text truncate block group-hover:text-sky transition-colors">dineshkadel</span>
                   </div>
                 </a>
               </Reveal>

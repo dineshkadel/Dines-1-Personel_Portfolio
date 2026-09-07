@@ -3,7 +3,7 @@ export const portfolioData = {
   role: "Fullstack Developer",
   location: "Kathmandu, Bagmati Province, Nepal",
   email: "dineshkadel11@email.com",
-  github: "https://github.com/dines-1",
+  github: "https://github.com/dineshkadel",
   linkedin: "https://www.linkedin.com/in/dinesh-kadel-7aa589292/",
   twitter: "https://twitter.com/dineshkadel",
 
@@ -67,7 +67,7 @@ export const portfolioData = {
       image: "",
       video: "",
       stack: ["React", "Node.js", "MongoDB", "Express"],
-      github: "https://github.com/dines-1/Learning_Management_System_",
+      github: "https://github.com/dineshkadel/Learning_Management_System_",
       demo: "#"
     },
     {
@@ -79,7 +79,7 @@ export const portfolioData = {
       image: "",
       video: "",
       stack: ["NextJS", "MongoDB", "Socket.io", "TypeScript"],
-      github: "https://github.com/dines-1/Echo--A-Chatapp-",
+      github: "https://github.com/dineshkadel/Echo--A-Chatapp-",
       demo: "#"
     },
     {
@@ -103,7 +103,7 @@ export const portfolioData = {
       image: "",
       video: "",
       stack: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      github: "https://github.com/dines-1/Local_household_service_booking",
+      github: "https://github.com/dineshkadel/Local_household_service_booking",
       demo: "#"
     },
     {
@@ -115,7 +115,7 @@ export const portfolioData = {
       image: "",
       video: "",
       stack: ["HTML", "Tailwind CSS", "JavaScript", "PHP", "MySQL"],
-      github: "https://github.com/dines-1/E_commerce-_website-About_-local-_mart",
+      github: "https://github.com/dineshkadel/E_commerce-_website-About_-local-_mart",
       demo: "#"
     }
   ],
