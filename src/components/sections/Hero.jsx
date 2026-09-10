@@ -99,9 +99,9 @@ const Hero = () => {
             {/* Image Container */}
             <div className="relative aspect-square rounded-2xl overflow-hidden border border-sky/10  transition-transform duration-500 group-hover:-translate-y-2 group-hover:scale-[1.02]">
               <img
-                src="./public/image.jpg"
+                src="./dist/assets/image.webp"
                 alt="Dinesh Kadel"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 rotate-90"
               />
 
               {/* Overlay Gradient */}
